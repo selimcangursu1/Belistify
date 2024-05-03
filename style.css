@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#423123,#987621);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate{
+    animation: coverRotate 10s linear infinite;
+}
+
+@keyframes coverRotate {
+    0%{
+        transform: rotateZ(0)
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.player{
+    width: 300px;
+    height:550px;
+    background: linear-gradient(#234556,#876543);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.player-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-btn{
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+    border: none;
+    background-color:whitesmoke;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: rgb(58, 52, 52);
+    cursor: pointer;
+}
+
+.player-btn:active{
+    transform: translateY(1px);
+}
+
+.player-center{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.music-info{
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    border-radius: 500px;
+    justify-content: center;
+    outline:2px solid gray;
+    align-items: center;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(30, 29, 29); */
+    color: whitesmoke;  
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+}
+
+.author-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+
+.info-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.song-name{
+    font-size: 14px;
+}
+.song-artist{
+    font-size: 12px;
+}
+
+.author-info i {
+   color:  rgb(1, 72, 1);
+}
+.author-info i:active{
+    transform: translateY(2px);
+}
+
+
+
+.song-duraction{
+    width: 100%;
+    height: 5.3px;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.song-process{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(1, 72, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.song-time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.song-time span{
+    font-size: 11px;
+    
+}
+
+.song-control{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.song-control button{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 30px;
+}
+.song-control .play-pause {
+    background-color: rgb(45, 96, 69);
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 30px;
+    color: whitesmoke;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.player-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-footer span{
+    font-size: 14px;
+}
+
+/* Display Flex İlgili Kutuyu Esnek Hale Getirir Blocktan Çıkarır */
+/* Flex-Direction:column dikey yönde hizlama yapılmasını sağlar */
+/* Flex-Direction:row yatay yönde hizlama yapılmasını sağlar */
+/* Background : Linear-Gradienct(#ren,#renk2) iki ayrı renk kombinasyonu oluşturur*/
+/* :active tıklama sonrası yapılacak olan işlemi baz alır */
+/* transform yönlendirme anlamına gelir transfrom:translateY(1px) dikey yönde yukarıdan aşşağıya kaymasını sağlar */
+/* transform yönlendirme anlamına gelir transfrom:translateY(-1px) dikey yönde aşşağıdan yukarı kaymasını sağlar */
+/* transform yönlendirme anlamına gelir transfrom:translateX(1px) yatay yönde yukarıdan aşşağıya kaymasını sağlar */
+/* transform yönlendirme anlamına gelir transfrom:translateX(1px) yatay yönde yukarıdan aşşağıya kaymasını sağlar */
